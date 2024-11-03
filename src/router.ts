@@ -27,7 +27,7 @@ router.post('/',
 );
 
 router.put('/:id', 
-    // Validacion
+    param('id').isInt().withMessage('ID no válido'),
     body('name')
         .notEmpty().withMessage('El nombre de producto no puede ir vacio'),
     body('price')
@@ -46,7 +46,7 @@ router.patch('/:id',
     updateAvailability
 );
 
-router.delete('/', 
+router.delete('/:id', 
     param('id').isInt().withMessage('ID no válido'),
     handleInputErrors,
     deleteProduct
