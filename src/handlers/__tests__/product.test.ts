@@ -11,7 +11,37 @@ describe('POST /api/products', () => {
 
         // Lo que NO se espera
         expect(response.status).not.toBe(404);
-        expect(response.body.errors).toHaveLength(2);   
+        expect(response.body.errors).not.toHaveLength(2);   
+    });
+
+    test('should validate that the price is greater than 0', async () => {
+        const response = await request(server).post('/api/products').send({
+            name : "Monitor Curvo",
+            price : 0
+        });
+        // Lo que se espera
+        expect(response.status).toBe(400);
+        expect(response.body).toHaveProperty('errors');
+        expect(response.body.errors).toHaveLength(1);
+
+        // Lo que NO se espera
+        expect(response.status).not.toBe(404);
+        expect(response.body.errors).not.toHaveLength(2);   
+    });
+
+    test('should validate that the price is a number and is greater than 0', async () => {
+        const response = await request(server).post('/api/products').send({
+            name : "Monitor Curvo",
+            price : "Hola"
+        });
+        // Lo que se espera
+        expect(response.status).toBe(400);
+        expect(response.body).toHaveProperty('errors');
+        expect(response.body.errors).toHaveLength(2);
+
+        // Lo que NO se espera
+        expect(response.status).not.toBe(404);
+        expect(response.body.errors).not.toHaveLength(4);   
     });
 
     test('should create a new product', async () => {
