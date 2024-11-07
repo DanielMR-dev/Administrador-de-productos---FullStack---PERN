@@ -113,7 +113,7 @@ export const deleteProduct = async (req: Request, res: Response) => {
 
         // Eliminar
         await product.destroy();
-        res.json({data: 'Producto eliminado'});
+        res.json({data: 'Producto Eliminado'});
     } catch (error) {
         console.log(error);
         res.status(500).json({ error: 'Error interno del servidor' });
