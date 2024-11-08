@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1731098469166" clover="3.2.0">
-  <project timestamp="1731098469166" name="All files">
-    <metrics statements="87" coveredstatements="78" conditionals="5" coveredconditionals="4" methods="11" coveredmethods="10" elements="103" coveredelements="92" complexity="0" loc="87" ncloc="87" packages="5" files="6" classes="6"/>
+<coverage generated="1731098950663" clover="3.2.0">
+  <project timestamp="1731098950663" name="All files">
+    <metrics statements="87" coveredstatements="83" conditionals="5" coveredconditionals="5" methods="11" coveredmethods="11" elements="103" coveredelements="99" complexity="0" loc="87" ncloc="87" packages="5" files="6" classes="6"/>
     <package name="src">
       <metrics statements="29" coveredstatements="28" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
       <file name="router.ts" path="C:\Users\USER\Desktop\Administrador-de-productos---FullStack---PERN\src\router.ts">
@@ -52,9 +52,9 @@
       </file>
     </package>
     <package name="src.handlers">
-      <metrics statements="40" coveredstatements="32" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="5"/>
+      <metrics statements="40" coveredstatements="37" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
       <file name="product.ts" path="C:\Users\USER\Desktop\Administrador-de-productos---FullStack---PERN\src\handlers\product.ts">
-        <metrics statements="40" coveredstatements="32" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="5"/>
+        <metrics statements="40" coveredstatements="37" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
         <line num="5" count="2" type="stmt"/>
@@ -78,23 +78,23 @@
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
         <line num="55" count="1" type="stmt"/>
-        <line num="57" count="2" type="stmt"/>
-        <line num="58" count="0" type="stmt"/>
-        <line num="59" count="0" type="stmt"/>
-        <line num="61" count="0" type="cond" truecount="0" falsecount="1"/>
-        <line num="62" count="0" type="stmt"/>
-        <line num="65" count="0" type="stmt"/>
-        <line num="69" count="0" type="stmt"/>
+        <line num="58" count="2" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="60" count="1" type="stmt"/>
+        <line num="62" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
         <line num="70" count="0" type="stmt"/>
         <line num="71" count="0" type="stmt"/>
-        <line num="74" count="2" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
         <line num="75" count="2" type="stmt"/>
         <line num="76" count="2" type="stmt"/>
-        <line num="78" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="79" count="1" type="stmt"/>
-        <line num="82" count="1" type="stmt"/>
-        <line num="86" count="1" type="stmt"/>
+        <line num="77" count="2" type="stmt"/>
+        <line num="79" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="80" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
         <line num="87" count="1" type="stmt"/>
+        <line num="88" count="1" type="stmt"/>
       </file>
     </package>
     <package name="src.middleware">
@@ -103,11 +103,11 @@
         <metrics statements="7" coveredstatements="7" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="2" count="2" type="stmt"/>
         <line num="4" count="2" type="stmt"/>
-        <line num="6" count="15" type="stmt"/>
-        <line num="7" count="15" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="16" type="stmt"/>
+        <line num="7" count="16" type="cond" truecount="1" falsecount="0"/>
         <line num="8" count="8" type="stmt"/>
         <line num="9" count="8" type="stmt"/>
-        <line num="11" count="7" type="stmt"/>
+        <line num="11" count="8" type="stmt"/>
       </file>
     </package>
     <package name="src.models">
