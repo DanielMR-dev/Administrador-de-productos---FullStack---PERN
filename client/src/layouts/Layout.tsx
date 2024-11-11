@@ -3,8 +3,17 @@ import { Outlet } from "react-router-dom"
 export default function Layout() {
     return (
         <>
-            <h1>Desde Layout</h1>
-            <Outlet/>
+            <header className="bg-slate-800">
+                <div className="mx-auto max-w-6xl py-10">
+                    <h1 className="text-4xl font-extrabold text-white">
+                        Administrador de Productos
+                    </h1>
+                </div>
+            </header>
+            
+            <header className="mt-10 mx-auto max-w-6xl py-10 bg-white shadow">
+                <Outlet/>
+            </header>
         </>
     )
 }
