@@ -4,7 +4,7 @@ import { DraftProductSchema, ProductsSchema, Product, ProductSchema } from "../t
 
 type ProductData = {
     [k: string] : FormDataEntryValue;
-}
+};
 
 export async function addProduct(data : ProductData) {
     try {
@@ -40,8 +40,8 @@ export async function getProducts() {
         }
     } catch (error) {
         console.log(error);
-    }
-}
+    };
+};
 
 export async function getProductById(id : Product['id']) {
     try {
@@ -58,4 +58,9 @@ export async function getProductById(id : Product['id']) {
     } catch (error) {
         console.log(error);
     }
+}
+
+export async function updateProduct(data : ProductData, id : Product['id']) {
+    console.log(data);
+    console.log(id);
 }
