@@ -5,14 +5,17 @@ import { Product } from "../types";
 
 export async function loader() {
     const products = await getProducts();
-    // console.log(products);
     return products;
 }
 
+export async function action() {
+    console.log('Desde Action de Actualizar');
+    return {};
+}
+
 export default function Products() {
-
+    
     const products = useLoaderData() as Product[];
-
 
     return (
         <>
