@@ -73,7 +73,8 @@ export async function updateProduct(data : ProductData, id : Product['id']) {
         });
 
         if(result.success) {
-            
+            const url = `${import.meta.env.VITE_API_URL}/api/products/${id}`;        
+            await axios.put(url, result.output);
         }
         console.log(result);
     } catch (error) {
